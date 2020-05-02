@@ -2,7 +2,7 @@
 
 session_start();
 
-$con = mysqli_connect('localhost','root','');
+$con = mysqli_connect('localhost','root','userlogin');
 
 mysqli_select_db($con, 'userregistration');
 
