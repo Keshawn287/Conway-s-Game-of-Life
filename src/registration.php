@@ -3,7 +3,7 @@
 session_start();
 header('location:login.php');
 
-$con = mysqli_connect('localhost','root','Kmt9278');
+$con = mysqli_connect('localhost','root','');
 
 mysqli_select_db($con, 'userregistration');
 
