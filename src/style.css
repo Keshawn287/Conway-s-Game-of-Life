@@ -1,0 +1,31 @@
+body{
+	background: url(GameofLife.jpg);
+	
+}
+
+.login-position{
+	max-width: 700px;
+	float: none;
+	margin: 150px auto;
+}
+
+.login-left{
+	
+	padding: 30px;
+	color:black;
+	background: rgba(192,192,192,0.7);
+	border: 2px hidden;
+	border-radius: 5px;
+	font-size: 20px;
+	
+}
+
+.register-right{
+	background: rgba(192,192,192,0.7);
+	color:black;
+	padding: 30px;
+	border: 2px hidden;
+	border-radius: 5px;
+	font-size: 20px;
+	
+}
