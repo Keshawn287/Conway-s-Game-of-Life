@@ -1,0 +1,35 @@
+A. Once you get the files into the correct place and set up a database
+B. I am using xampp which comes with phpMyAdmin
+
+1. Find the line "mysqli_select_db($con, 'userregistration');" in the verification.php 
+and validation.php pages. 
+
+'userregistration' is the name of the database that I am connecting for the purpose of
+storing game user's username and password
+
+If you choose to name your database something else you must change 'userregistration'
+in the line containing "mysqli_select_db($con, 'userregistration');" to the name of your 
+database
+
+2. Steps for database (just in case)
+
+1.) open phpMyAdmin
+2.) click on database
+3.) In "Create Database" field name database (I named the database'userregistration')
+4.) click create
+5.) Find database name in the left panel section
+6.) Enter the table name as "usertable" and set number of columns to 2 --> click go
+7.) In column name section do the following
+
+	row 1: Name -> name | Type -> varchar | Length/Values -> 255 | Index -> Primary (click go)
+	row 2: Name -> password | Type -> varchar | Length/Values -> 255
+ 
+8.) Preview sql then click save
+9.) you can go to the login.php file and register a user
+10.) Registration is successful if you are redirected to the login page
+11.) Enter login to login part of page
+12.) youll be directed to the home.php page where we can implement the game.
+
+
+
+3.) Please dont make any changes to the main branch until we get done with the game

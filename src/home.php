@@ -5,7 +5,6 @@ if(!isset($_SESSION['username'])){
 	header('location:login.php');
 }
 
-
 ?>
 
 <html>
@@ -14,7 +13,7 @@ if(!isset($_SESSION['username'])){
 </head>
 <body>
 
-	<h1>Welcome <?php echo $_SESSION['username']?> </h1>
+	<h1>Welcome User <?php echo $_SESSION['username']; ?></h1>
 	
 	<a href="logout.php">LOG OUT </a>
 </body>
