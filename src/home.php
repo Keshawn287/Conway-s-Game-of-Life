@@ -13,6 +13,7 @@ if(!isset($_SESSION['username'])){
     <meta charset="UTF-8">
     <title>Game of Life</title>
     <link rel="stylesheet" href='style1.css'>
+	
 </head>
 <body>
 <div style="text-align:center">

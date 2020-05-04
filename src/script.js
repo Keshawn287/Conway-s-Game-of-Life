@@ -169,7 +169,9 @@ function reset(){
 
 function counter(){
         c++;
-        gencnt = document.getElementById('gencount').innerHTML = "Generation: "+c;
+        gencnt = document.getElementById('gencount').innerHTML = "<span style='color:#ffffff'> Generation: "+c +"</span>";
+		
+		
 }
 
 // Still Life Pattern: Block //
