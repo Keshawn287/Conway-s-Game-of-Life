@@ -16,7 +16,7 @@ if(!isset($_SESSION['username'])){
 	
 </head>
 <body>
-<div style="text-align:center">
+<div>
 	<h1 class = "gol">Welcome to Game of Life User <?php echo $_SESSION['username']; ?></h1>
 	<div class = 'game'>
 	<div id='grid'>
@@ -39,6 +39,7 @@ if(!isset($_SESSION['username'])){
 			<option value="toad">Toad</option>
 			<option value="glider">Glider</option>
 		</select>
+		
 		
 	</div>
 	
