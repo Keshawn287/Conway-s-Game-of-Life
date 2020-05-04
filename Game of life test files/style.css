@@ -1,6 +1,10 @@
 *{
     background-color: aqua;
 }
+.game {
+    width: 40%;
+    margin:auto;
+}
 .gol {
 		display: inline;
 		font-size: 3em;
