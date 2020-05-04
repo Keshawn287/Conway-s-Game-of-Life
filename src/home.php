@@ -18,7 +18,7 @@ if(!isset($_SESSION['username'])){
 <body>
 <div style="text-align:center">
 	<h1 class = "gol">Welcome to Game of Life User <?php echo $_SESSION['username']; ?></h1>
-	
+	<div class = 'game'>
 	<div id='grid'>
 	</div>
 	
@@ -46,6 +46,7 @@ if(!isset($_SESSION['username'])){
 	
 	<a href="logout.php">LOG OUT </a>
 
+</div>
 </div>
 </body>
 </html>
