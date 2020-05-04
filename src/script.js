@@ -5,6 +5,8 @@ let gen =[rows];
 let nextGen =[rows];
 var interval;
 var c = 0;
+var sel = document.getElementById('patterns');
+sel.addEventListener("change", selectPattern);
 
 function makeGrid() {
     let grid = document.querySelector('#grid');
@@ -146,7 +148,7 @@ function newGen(){
 }
 
 function start(){
-    intervals = setInterval(newGen,1000);
+    intervals = setInterval(newGen,500);
     counter();
 }
 
@@ -167,6 +169,71 @@ function reset(){
 function counter(){
         c++;
         gencnt = document.getElementById('gencount').innerHTML = "Generation: "+c;
+}
+
+// Still Life Pattern: Block //
+function block(){
+    // resets grid
+    beginning(); 
+    updateGrid();
+
+    gen[5][5] = 1;
+    gen[5][6] = 1;
+    gen[6][5] = 1;
+    gen[6][6] = 1;
+    updateGrid();
+}
+
+// Oscillators
+function blinker(){
+    beginning();
+    updateGrid();
+
+    gen[8][8] = 1;
+    gen[8][9] = 1;
+    gen[8][10] = 1;
+    updateGrid();
+    
+}
+
+function toad(){
+    beginning();
+    updateGrid();
+    gen[9][9] = 1;
+    gen[9][10] = 1;
+    gen[9][11] = 1;
+    gen[10][8] = 1;
+    gen[10][9] = 1;
+    gen[10][10] = 1;
+    updateGrid();
+}
+
+// Glider
+function glider(){
+    beginning();
+    updateGrid();
+    gen[4][6] = 1;
+    gen[5][7] = 1;
+    gen[6][5] = 1;
+    gen[6][6] = 1;
+    gen[6][7] = 1;
+    updateGrid();
+}
+
+function selectPattern(sel){
+    if(sel.value == 'block'){
+        block();
+    }
+    else if(sel.value == 'blinker'){
+        blinker();
+    }
+    else if(sel.value == 'toad'){
+        toad();
+    }
+    else if(sel.value == 'glider'){
+        glider();
+    }
+
 }
 
 window.onload=()=>{
