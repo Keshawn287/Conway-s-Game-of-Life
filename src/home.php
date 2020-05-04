@@ -30,7 +30,7 @@ if(!isset($_SESSION['username'])){
 		<input type='button' value='Skip' onclick='skip()'.>
 		<input type='button' value='Reset' onclick='reset()'.>
 		
-		<label for="patterns">Choose a pattern:</label>
+		<label for="patterns" style="color:white">Choose a pattern:</label>
 		<select id="patterns" onchange="selectPattern(this)">
 			<option value="blank"></option>
 			<option value="block">Block</option>
