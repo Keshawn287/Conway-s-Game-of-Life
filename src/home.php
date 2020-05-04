@@ -11,9 +11,6 @@ if(!isset($_SESSION['username'])){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Game of Life</title>
     <link rel="stylesheet" href='style1.css'>
 </head>
@@ -32,6 +29,15 @@ if(!isset($_SESSION['username'])){
 		<input type='button' value='Step' onclick='newGen()'.>
 		<input type='button' value='Skip' onclick='skip()'.>
 		<input type='button' value='Reset' onclick='reset()'.>
+		
+		<label for="patterns">Choose a pattern:</label>
+		<select id="patterns" onchange="selectPattern(this)">
+			<option value="blank"></option>
+			<option value="block">Block</option>
+			<option value="blinker">Blinker</option>
+			<option value="toad">Toad</option>
+			<option value="glider">Glider</option>
+		</select>
 		
 	</div>
 	
