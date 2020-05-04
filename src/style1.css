@@ -2,6 +2,10 @@ body{
 	background: url(GameofLife2.jpg);
 	
 }
+.game {
+    width: 40%;
+    margin:auto;
+}
 
 .gol {
 		display: inline, right;
