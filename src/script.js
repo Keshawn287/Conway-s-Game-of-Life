@@ -8,6 +8,7 @@ var c = 0;
 var sel = document.getElementById('patterns');
 sel.addEventListener("change", selectPattern);
 
+// Used source: 'Medium' to help make grid using html table //
 function makeGrid() {
     let grid = document.querySelector('#grid');
     
