@@ -17,7 +17,7 @@ if(!isset($_SESSION['username'])){
 </head>
 <body>
 <div>
-	<h1 class = "gol">Welcome to Game of Life User <?php echo $_SESSION['username']; ?></h1>
+	<h1 class = "gol"  style="text-align:center">Welcome to Game of Life User <?php echo $_SESSION['username']; ?></h1>
 	<div class = 'game'>
 	<div id='grid'>
 	</div>
